@@ -38,8 +38,14 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Copyright */}
-          <div className="pt-2">
+          {/* Company registration & Copyright */}
+          <div className="pt-2 space-y-2">
+            <div className="text-black/70 text-[11px] leading-tight space-y-1">
+              <p className="md:whitespace-nowrap">
+                Henderson Thomas is the trading name of West Green Consultancy Limited. Registered in England and Wales
+              </p>
+              <p>Company Number 16300477.</p>
+            </div>
             <p className="text-black text-[12px]">
               © Copyright {new Date().getFullYear()} | All Rights Reserved
             </p>

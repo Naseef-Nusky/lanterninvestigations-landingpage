@@ -1,38 +1,35 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
 
-const ContactFormSection = () => {
+const EMAILJS_CONFIG = {
+  serviceId: 'service_z9nrpnh',
+  templateId: 'template_ito81i4',
+  publicKey: 'KMtxeuThzMItKsmDc',
+};
+
+const ContactFormSection = ({ sectionId }) => {
   const formRef = useRef();
   const navigate = useNavigate();
   const [errors, setErrors] = useState({});
   const [isSending, setIsSending] = useState(false);
-
-  // REPLACE THESE WITH YOUR ACTUAL CREDENTIALS
-  const EMAILJS_CONFIG = {
-    serviceId: "service_z9nrpnh",
-    templateId: "template_ito81i4", 
-    publicKey: "KMtxeuThzMItKsmDc", 
-  };
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = new FormData(formRef.current);
     const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      message: formData.get("message"),
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      message: formData.get('message'),
     };
 
-    // Validation
     const newErrors = {};
-    if (!data.name) newErrors.name = "Please complete this required field.";
-    if (!data.email) newErrors.email = "Please complete this required field.";
-    if (!data.phone) newErrors.phone = "Please complete this required field.";
-    if (!data.message) newErrors.message = "Please complete this required field.";
+    if (!data.name) newErrors.name = 'Please complete this required field.';
+    if (!data.email) newErrors.email = 'Please complete this required field.';
+    if (!data.phone) newErrors.phone = 'Please complete this required field.';
+    if (!data.message) newErrors.message = 'Please complete this required field.';
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -59,14 +56,13 @@ const ContactFormSection = () => {
 
       if (result.status === 200) {
         formRef.current.reset();
-        // Redirect to thank-you page
         navigate('/thank-you');
       } else {
-        alert("❌ Failed to send message. Please try again.");
+        alert('Failed to send message. Please try again.');
       }
     } catch (error) {
-      console.error("EmailJS Error:", error);
-      alert("❌ Failed to send message. Please try again or contact us directly.");
+      console.error('EmailJS Error:', error);
+      alert('Failed to send message. Please try again or contact us directly.');
     } finally {
       setIsSending(false);
     }
@@ -74,7 +70,7 @@ const ContactFormSection = () => {
 
   return (
     <section
-      id="contact"
+      id={sectionId}
       className="relative py-20 bg-cover bg-center bg-no-repeat flex items-center"
       style={{ backgroundImage: `url('contact-bottom.jpg')` }}
     >
@@ -94,6 +90,7 @@ const ContactFormSection = () => {
               ref={formRef}
               onSubmit={handleSubmit}
               className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+              noValidate
             >
               <div className="space-y-5">
                 <input
@@ -142,12 +139,11 @@ const ContactFormSection = () => {
                     disabled={isSending}
                     className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-3 px-8 rounded-lg text-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {isSending ? "Sending..." : "Receive Free Quote"}
+                    {isSending ? 'Sending...' : 'Receive Free Quote'}
                   </button>
                 </div>
               </div>
             </form>
-
           </div>
         </div>
       </div>

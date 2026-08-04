@@ -43,7 +43,7 @@ function App() {
             element={
               <main>
                 <HeroSection />
-                <ContactFormSection />
+                <ContactFormSection sectionId="contact" />
                 <WhyChooseUs />
                 <ThreeSteps />
                 <ServicesGrid />
