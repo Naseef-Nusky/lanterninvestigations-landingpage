@@ -1,12 +1,6 @@
 import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
-
-const EMAILJS_CONFIG = {
-  serviceId: 'service_z9nrpnh',
-  templateId: 'template_ito81i4',
-  publicKey: 'KMtxeuThzMItKsmDc',
-};
+import { sendContactEnquiry } from '../lib/sendContactEnquiry';
 
 const ContactFormSection = ({ sectionId }) => {
   const formRef = useRef();
@@ -40,28 +34,18 @@ const ContactFormSection = ({ sectionId }) => {
     setIsSending(true);
 
     try {
-      const result = await emailjs.send(
-        EMAILJS_CONFIG.serviceId,
-        EMAILJS_CONFIG.templateId,
-        {
-          title: `New Quote Request from ${data.name}`,
-          name: data.name,
-          email: data.email,
-          phone: data.phone,
-          message: data.message,
-          time: new Date().toLocaleString(),
-        },
-        EMAILJS_CONFIG.publicKey
-      );
+      await sendContactEnquiry({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        message: data.message,
+        source: 'landing',
+      });
 
-      if (result.status === 200) {
-        formRef.current.reset();
-        navigate('/thank-you');
-      } else {
-        alert('Failed to send message. Please try again.');
-      }
+      formRef.current.reset();
+      navigate('/thank-you');
     } catch (error) {
-      console.error('EmailJS Error:', error);
+      console.error('Contact form error:', error);
       alert('Failed to send message. Please try again or contact us directly.');
     } finally {
       setIsSending(false);

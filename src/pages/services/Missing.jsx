@@ -39,7 +39,7 @@ const MissingPersons = () => {
             professional missing persons investigators becomes invaluable.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            A skilled investigator, such as Henderson Thomas Investigations, has
+            A skilled investigator, such as Lantern Investigations, has
             the experience, tools, and resources needed to uncover the truth.
             Our services include tracing possible locations of missing
             individuals, locating birth parents, and ultimately helping families
@@ -50,10 +50,10 @@ const MissingPersons = () => {
         {/* Why Choose Us */}
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-800">
-            Why Choose Henderson Thomas Investigations?
+            Why Choose Lantern Investigations?
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            When it comes to missing person investigations, Henderson Thomas
+            When it comes to missing person investigations, Lantern
             Investigations is the trusted name you can rely on. Based in London,
             we have a team of highly skilled private investigators with
             experience in handling cases across the UK, consistently achieving

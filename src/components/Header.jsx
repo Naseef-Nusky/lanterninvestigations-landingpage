@@ -7,9 +7,9 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center">
           <img
-            src="/logo.png"
-            alt="Henderson Thomas Investigations"
-            className="h-10 md:h-12 w-auto"
+            src="/logo-new.png"
+            alt="Lantern Investigations"
+            className="h-14 md:h-16 w-auto"
           />
         </div>
    

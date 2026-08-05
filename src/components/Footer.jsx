@@ -8,16 +8,16 @@ const Footer = () => {
           {/* Company Logo */}
           <div className="mb-8">
             <img
-              src="/logo.png"
-              alt="Henderson Thomas Investigations"
-              className="mx-auto max-w-sm w-full h-auto"
+              src="/logo-new.png"
+              alt="Lantern Investigations"
+              className="mx-auto max-w-md w-full h-auto"
             />
           </div>
 
           {/* Company Name */}
           <div className="mb-12">
             <h3 className="text-lg font-normal text-black">
-              Henderson Thomas Investigations
+              Lantern Investigations
             </h3>
           </div>
 
@@ -25,16 +25,16 @@ const Footer = () => {
           <div className="space-y-3 mb-12">
             {/* Phone and Email */}
             <div className="text-black text-[12px]">
-              <span>Phone: 07826 416466</span><br />
+              <span>Phone: 07979 359508</span><br />
               <span className="mx-2">Email:</span>
-              <a href="mailto:private@hendersonthomasinvestigations.com" className="text-black hover:text-blue-600">
-                private@hendersonthomasinvestigations.com
+              <a href="mailto:info@lanterninvestigations.com" className="text-black hover:text-blue-600">
+                info@lanterninvestigations.com
               </a>
             </div>
 
             {/* Address */}
             <div className="text-black text-[12px]">
-              1st Floor, 238 Kensington High St, London W8 6SN
+              51 Lime Street, London EC3M 7DQ
             </div>
           </div>
 
@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="pt-2 space-y-2">
             <div className="text-black/70 text-[11px] leading-tight space-y-1">
               <p className="md:whitespace-nowrap">
-                Henderson Thomas is the trading name of West Green Consultancy Limited. Registered in England and Wales
+                Lantern Investigations is the trading name of West Green Consultancy Limited. Registered in England and Wales
               </p>
               <p>Company Number 16300477.</p>
             </div>

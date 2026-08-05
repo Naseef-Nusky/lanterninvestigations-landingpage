@@ -41,7 +41,7 @@ const FraudInvestigation = () => {
           </p>
           <p className="text-gray-700 leading-relaxed">
             As fraud becomes more complex, having the right expertise is key to
-            handling it effectively. At Henderson Thomas Investigations, our
+            handling it effectively. At Lantern Investigations, our
             team of experienced fraud investigators is here to help. We use our
             skills and knowledge to uncover fraudulent activities, ensuring that
             we handle every case with care and accuracy. Let us assist you in
@@ -74,10 +74,10 @@ const FraudInvestigation = () => {
         {/* Why Choose Us */}
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-800">
-            Why Choose Henderson Thomas Investigations?
+            Why Choose Lantern Investigations?
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            At Henderson Thomas Investigations, we bring years of experience and
+            At Lantern Investigations, we bring years of experience and
             expertise to fraud and criminal investigations. Our team consists of
             certified professionals who have successfully handled cases across a
             wide range of industries. We utilise the latest technology and

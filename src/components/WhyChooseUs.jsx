@@ -10,7 +10,7 @@
 //           Why Choose Us?
 //         </h2>
 //             <p className='text-[19px] font-medium'>
-//               At Henderson Thomas Investigations, we specialize in discreet and
+//               At Lantern Investigations, we specialize in discreet and
 //               results‑oriented private investigation services, backed by a team of
 //               highly experienced private detectives with over 25 years of expertise.
 //               Whether you’re searching for a private investigator near me, need
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
 
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
               With over <span className="font-semibold">25 years of experience</span>, 
-              Henderson Thomas Investigations delivers discreet and results-oriented 
+              Lantern Investigations delivers discreet and results-oriented 
               private investigation services you can trust.
             </p>
 

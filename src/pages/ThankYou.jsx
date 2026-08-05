@@ -8,7 +8,7 @@ const ThankYou = () => {
       // Page view tracking
       window.gtag('event', 'page_view', {
         page_path: '/thank-you',
-        page_title: 'Thank You - Henderson Thomas Investigations',
+        page_title: 'Thank You - Lantern Investigations',
       });
       
       // Google Ads conversion tracking
@@ -38,7 +38,7 @@ const ThankYou = () => {
           
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
             We have received your details and will get back to you shortly. 
-            Our team at Henderson Thomas Investigations will review your case 
+            Our team at Lantern Investigations will review your case 
             and contact you within 24 hours.
           </p>
 

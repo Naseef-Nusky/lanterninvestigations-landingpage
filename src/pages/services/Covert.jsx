@@ -33,7 +33,7 @@ const Covert = () => {
         {/* Intro */}
         <div className="space-y-4">
           <p className="text-gray-700 leading-relaxed">
-            Henderson Thomas Investigations stands as a trusted leader in the field of covert investigations, offering unmatched expertise and unwavering integrity. Our team of highly skilled professionals, known as “Covert Investigation Specialists,” is dedicated to uncovering hidden truths with discretion and precision. We recognise that sensitive matters demand a careful and professional approach, and that’s where our expertise shines.
+            Lantern Investigations stands as a trusted leader in the field of covert investigations, offering unmatched expertise and unwavering integrity. Our team of highly skilled professionals, known as “Covert Investigation Specialists,” is dedicated to uncovering hidden truths with discretion and precision. We recognise that sensitive matters demand a careful and professional approach, and that’s where our expertise shines.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Covert investigations are crucial across a variety of scenarios, from safeguarding corporate interests and supporting legal cases to addressing personal concerns and resolving criminal matters. The ability to operate discreetly is often the key to uncovering vital information, protecting assets, and maintaining reputations. Our tailored services empower clients to make well-informed decisions, reduce risks, and gain clarity in even the most complex situations.
@@ -47,15 +47,15 @@ const Covert = () => {
             Covert investigations are the art of discreetly gathering information, data, or evidence without the subject’s awareness. This approach enables us to observe, document, and analyse activities while maintaining complete confidentiality and avoiding alerting the target.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            At Henderson Thomas Investigations, we specialise in a wide range of covert investigation services, including the prevention of corporate espionage, infidelity investigations, and much more. Whether it’s a business protecting its sensitive information or an individual seeking clarity in a personal matter, our covert investigation skills serve as a vital resource in uncovering the truth with precision and professionalism.
+            At Lantern Investigations, we specialise in a wide range of covert investigation services, including the prevention of corporate espionage, infidelity investigations, and much more. Whether it’s a business protecting its sensitive information or an individual seeking clarity in a personal matter, our covert investigation skills serve as a vital resource in uncovering the truth with precision and professionalism.
           </p>
         </div>
 
         {/* Why Choose Us */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-800">Why Choose Henderson Thomas Investigations?</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Why Choose Lantern Investigations?</h2>
           <p className="text-gray-700 leading-relaxed">
-            At Henderson Thomas Investigations, our team comprises seasoned professionals with extensive expertise and a dedication to achieving results. Our investigators undergo comprehensive training, hold relevant certifications, and remain connected to key industry networks to stay updated on the latest investigative strategies. With a strong history of solving complex cases and delivering impactful outcomes, we have earned a reputation for excellence in uncovering the truth.
+            At Lantern Investigations, our team comprises seasoned professionals with extensive expertise and a dedication to achieving results. Our investigators undergo comprehensive training, hold relevant certifications, and remain connected to key industry networks to stay updated on the latest investigative strategies. With a strong history of solving complex cases and delivering impactful outcomes, we have earned a reputation for excellence in uncovering the truth.
           </p>
         </div>
 
