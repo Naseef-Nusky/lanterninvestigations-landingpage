@@ -67,28 +67,28 @@ const WhyChooseUs = () => {
               <div className="flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
                 <ShieldCheck className="text-[#00b9ed] w-7 h-7 mt-1" />
                 <p className="text-gray-700 text-lg">
-                  <span className="font-semibold">Confidential & Trusted:</span> 
+                  <span className="font-semibold">Confidential & Trusted:</span>{' '}
                   All cases handled with complete discretion and professionalism.
                 </p>
               </div>
               <div className="flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
                 <Users className="text-[#00b9ed] w-7 h-7 mt-1" />
                 <p className="text-gray-700 text-lg">
-                  <span className="font-semibold">Expert Team:</span> 
+                  <span className="font-semibold">Expert Team:</span>{' '}
                   Highly experienced detectives specializing in corporate and personal cases.
                 </p>
               </div>
               <div className="flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
                 <Search className="text-[#00b9ed] w-7 h-7 mt-1" />
                 <p className="text-gray-700 text-lg">
-                  <span className="font-semibold">Comprehensive Services:</span> 
+                  <span className="font-semibold">Comprehensive Services:</span>{' '}
                   From phone investigations to financial and legal cases.
                 </p>
               </div>
               <div className="flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
                 <Briefcase className="text-[#00b9ed] w-7 h-7 mt-1" />
                 <p className="text-gray-700 text-lg">
-                  <span className="font-semibold">Tailored Solutions:</span> 
+                  <span className="font-semibold">Tailored Solutions:</span>{' '}
                   Every case is customized to deliver precise, accurate results.
                 </p>
               </div>
