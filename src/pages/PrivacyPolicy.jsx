@@ -1,0 +1,114 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
+
+const PrivacyPolicy = () => {
+  return (
+    <div className="bg-white">
+      {/* Page Header */}
+      <section className="pt-8 md:pt-10 pb-4 md:pb-5">
+        <div className="container mx-auto px-4">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-sm md:text-base text-gray-600 hover:text-[#0047b2] transition-colors mb-6"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back
+          </Link>
+          <div className="text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">
+              Privacy Policy
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+              Your privacy is important to us. Learn how Lantern Investigations protects and manages your personal information.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <div className="pt-4 md:pt-6 pb-12 px-6 md:px-16 lg:px-32">
+        <div className="max-w-4xl mx-auto text-left">
+          <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+            Lantern Investigations is committed to ensuring that your privacy is protected. This policy explains how we use the information we collect about you, how you can instruct us if you prefer to limit the use of that information, and the procedures we have in place to safeguard your privacy.
+          </p>
+
+          <h2 className="text-lg font-semibold text-black mb-2">
+            1. The Information We Collect and How We Use It
+          </h2>
+          <p className="text-gray-700 mb-4 text-sm md:text-base leading-relaxed">
+            If you submit an inquiry and respond to any of the requests for information in our feedback service, you may as a result submit to us your email address. Access to your personal data, including your email address, is only provided to our staff and third parties who help us to process your inquiry and trusted business partners, whose products and services may save you money.
+          </p>
+
+          <h3 className="text-md font-semibold text-black mb-2">About Cookies</h3>
+          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+            We use cookies. A cookie is a small file that is stored on your computer&apos;s hard drive by your web browser. They allow us to understand what areas of the website are of interest to our visitors and allow us to provide a better user experience. These cookies do not track individual user information, and all our cookie data is encrypted and cannot be read by other websites.
+            <br />
+            <br />
+            It is possible to &apos;turn off&apos; the cookies in your browser and this will not affect the functionality of the website. You can find out more information about cookies, including how to switch them on or off, at{' '}
+            <a
+              href="https://www.aboutcookies.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              www.aboutcookies.org
+            </a>
+            .
+          </p>
+
+          <h2 className="text-lg font-semibold text-black mb-2">
+            2. How We Protect Your Information
+          </h2>
+          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+            The internet is not a secure medium. However, we have put in place various security procedures as set out in this policy. Firewalls are used to block unauthorised traffic to the servers, and the actual servers are located in a secure location which can only be accessed by authorised personnel. We also keep your information confidential. Our internal procedures cover the storage, access, and disclosure of your information.
+          </p>
+
+          <h2 className="text-lg font-semibold text-black mb-2">3. Your Consent</h2>
+          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+            By submitting any information about you and, where applicable, others within this website, you and they consent to its use as set out in this Privacy Policy. If we change our Privacy Policy, we will post the changes on this page and may place notices on other pages of the website so that you may be aware of the information we collect and how we use it at all times. Continued use of the service will signify that you agree to any such changes.
+            <br />
+            <br />
+            The internet is a global medium and your information may therefore be transferred outside the European Economic Area en route. By submitting your information, you consent to any such transfer. We may pass your personal information to other companies for processing on our behalf. Some of these companies may be based outside Europe in countries which may not have laws to protect your personal information, but in all cases we will ensure that it is kept securely and only used for the purposes for which you provided it. If you do not want us to have personal information about you, please do not submit it to us.
+          </p>
+
+          <h2 className="text-lg font-semibold text-black mb-2">
+            4. Passing on Information About You
+          </h2>
+          <p className="text-gray-700 mb-4 text-sm md:text-base leading-relaxed">
+            Please be aware that once you use our website or our services, you will be regarded as having given your consent to us disclosing your personal information to the following parties:
+          </p>
+          <ul className="list-disc list-inside text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+            <li>Third parties who help us to process your inquiry.</li>
+            <li>
+              We may disclose information about you in connection with legal proceedings or potential legal proceedings, or if otherwise permitted to do so by law.
+            </li>
+            <li>
+              Our trusted business partners, whose products and services may save you money.
+            </li>
+          </ul>
+          <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
+            You can ask us to stop passing your information to third parties for marketing purposes at any time, which we will do. Such a request may result in us ceasing to offer the services to you.
+          </p>
+
+          <h2 className="text-lg font-semibold text-black mb-2">
+            5. How to Contact Lantern Investigations
+          </h2>
+          <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+            We welcome your views about our website and our Privacy Policy. If you have any queries or comments, feel free to contact us at{' '}
+            <a href="mailto:info@lanterninvestigations.com" className="text-blue-600 hover:underline">
+              info@lanterninvestigations.com
+            </a>
+            {' '}or call{' '}
+            <a href="tel:07979359508" className="text-blue-600 hover:underline">
+              07979 359508
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PrivacyPolicy;

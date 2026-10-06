@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -7,11 +8,13 @@ const Footer = () => {
         <div className="text-center">
           {/* Company Logo */}
           <div className="mb-8">
-            <img
-              src="/logo-new.png"
-              alt="Lantern Investigations"
-              className="mx-auto max-w-md w-full h-auto"
-            />
+            <Link to="/" aria-label="Go to home page">
+              <img
+                src="/logo-new.png"
+                alt="Lantern Investigations"
+                className="mx-auto max-w-md w-full h-auto"
+              />
+            </Link>
           </div>
 
           {/* Company Name */}
@@ -42,6 +45,11 @@ const Footer = () => {
           <div className="pt-2 space-y-2">
             <p className="text-black text-[12px]">
               © Copyright {new Date().getFullYear()} | All Rights Reserved
+            </p>
+            <p className="text-black text-[12px]">
+              <Link to="/privacy-policy" className="hover:text-blue-600">
+                Privacy Policy
+              </Link>
             </p>
           </div>
         </div>
