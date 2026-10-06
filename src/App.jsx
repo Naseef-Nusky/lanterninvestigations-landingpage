@@ -20,6 +20,7 @@ import Fraud from './pages/services/Fraud.jsx';
 import Background from './pages/services/Background.jsx';
 import ThankYou from './pages/ThankYou.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
+import TermsAndConditions from './pages/TermsAndConditions.jsx';
 
 // ScrollToTop Component
 const ScrollToTop = () => {
@@ -67,6 +68,9 @@ function App() {
 
           {/* Privacy Policy */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+          {/* Terms & Conditions */}
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         </Routes>
 
         <Footer />
